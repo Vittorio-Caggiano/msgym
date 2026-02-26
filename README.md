@@ -158,7 +158,7 @@ The demos below illustrate these tracking capabilities of the MS-Human model:
 <table>
   <tr>
     <td align="center" width="25%">
-      <video src="https://github.com/user-attachments/assets/32d4a4a9-6834-4f37-9df1-ebf7b6af0753" width="100%" controls autoplay loop muted></video>
+      <video src="https://github.com/user-attachments/assets/cfde4ae4-f445-46a4-9681-f13bcf636e47" width="100%" controls autoplay loop muted></video>
     </td>
     <td align="center" width="25%">
       <video src="https://github.com/user-attachments/assets/d0961f7a-18c5-49a6-bb24-09b6da265a19" width="100%" controls autoplay loop muted></video>
