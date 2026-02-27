@@ -179,16 +179,3 @@ The demos below illustrate these tracking capabilities of the MS-Human model:
     </td>
   </tr>
 </table>
-
-[**Contact-Rich Deformable Interaction**](https://lnsgroup.cc/research/SoftHand) simulation results:
-
-<table>
-  <tr>
-    <td align="center" width="40%">
-      <img src="https://github.com/user-attachments/assets/e152a6ad-91c3-469f-ae5f-3a4f4747ac82" alt="softfoot" width="100%">
-    </td>
-    <td align="center" width="55%">
-      <img src="https://github.com/user-attachments/assets/ccc97dc9-d05b-4982-b765-a3e761a6d604" alt="softhand" width="100%">
-    </td>
-  </tr>
-</table>
