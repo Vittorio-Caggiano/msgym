@@ -57,7 +57,7 @@ After this, `import msgym` and `gymnasium.make("msgym/...")` work in your enviro
 
 ### Optional: DynSyn-SAC training
 
-For [DynSyn](https://github.com/Beanpow/DynSyn) reinforcement learning training, install the optional dependency set.
+For [DynSyn](https://lnsgroup.cc/research/DynSyn) reinforcement learning training, install the optional dependency set.
 
 ```bash
 uv sync --extra dynsyn
@@ -134,7 +134,7 @@ If you use MS-Human-700 or msgym, please cite our ICRA 2024 paper and other rela
 
 ## Control Demos
 
-[**DynSyn**](https://github.com/Beanpow/DynSyn) control results:
+[**DynSyn**](https://lnsgroup.cc/research/DynSyn) control results:
 
 <div align="center">
   <img src="pictures/loco_full_gif.gif" width="32%">
