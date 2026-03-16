@@ -1,4 +1,6 @@
 from typing import Any, Callable, List, Optional
+import os
+import sys
 import numpy as np
 from gymnasium import spaces
 import mujoco
@@ -21,6 +23,31 @@ def action_obs_check(cls: Any) -> None:
     high = cls.observation_space.high
     if (low == high).any():
         raise ValueError("Observation space has the same low and high value")
+
+
+def get_ms_human_model_path(filename: str) -> str:
+    """Resolve path to an MS-Human-700 XML model file.
+
+    Tries two locations:
+    1. Relative to the source tree (for editable / local installs).
+    2. Under sys.prefix/MS-Human-700 (for wheels using data_files).
+    """
+    # 1. Source / editable install: project_root/MS-Human-700/<filename>
+    src_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    candidate = os.path.join(src_root, "MS-Human-700", filename)
+    if os.path.exists(candidate):
+        return candidate
+
+    # 2. Installed via data_files: sys.prefix/MS-Human-700/<filename>
+    candidate = os.path.join(sys.prefix, "MS-Human-700", filename)
+    if os.path.exists(candidate):
+        return candidate
+
+    raise ValueError(
+        "Could not locate MS-Human-700 model file. Tried:\n"
+        f"- {os.path.join(src_root, 'MS-Human-700', filename)}\n"
+        f"- {os.path.join(sys.prefix, 'MS-Human-700', filename)}"
+    )
 
 def get_observation_space(
     xml_path: str,
