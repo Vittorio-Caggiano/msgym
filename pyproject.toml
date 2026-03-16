@@ -38,4 +38,7 @@ where = [".", "DynSyn-SAC"]
 include = ["msgym*", "DynSyn*"]
 
 [tool.setuptools.package-data]
-msgym = ["MS-Human-700/**/*"]
+msgym = [
+       "MS-Human-700/**/*",
+       "motion_data/*.npz",
+   ]
